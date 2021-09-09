@@ -108,31 +108,30 @@ The Venedor page has:
             <!--main header button group-->
             
             <div class="col-md-7 col-lg-6 main-header-button-group d-flex justify-content-center justify-content-lg-end align-items-center">
+                <!--button 1-->   
                 <div class="dropdown btn-group">
-                    <!--button 1-->
-                    
                     <button class="btn btn-secondary dropdown-toggle currency-button" type="button" id="currencyDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         US Dollar
                     </button>
-                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="currencyDropdownMenu">
+                    <div class="dropdown-menu dropdown-menu-lg-right currency-menu" aria-labelledby="currencyDropdownMenu">
                         <a class="dropdown-item" href="#">$</a>
                         <a class="dropdown-item" href="#">€</a>
                         <a class="dropdown-item" href="#">£</a>
                     </div>
-                    
-                    <!--button 2-->
-                    
+                </div>
+                <!--button 2-->
+                <div class="dropdown btn-group"> 
                     <button class="btn btn-secondary language-button" type="button" id="languageDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="css/media/england-flag.png" alt="flag of England"> English</button>
                     <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="languageDropdownMenu">
-                    <button class="dropdown-item active" type="button"></button>
-                    <button class="dropdown-item" type="button"><img src="css/media/england-flag.png" alt="">english</button>
-                    <button class="dropdown-item" type="button"><img src="css/media/italian-flag.png" alt="">italian</button>
-                    <button class="dropdown-item" type="button"><img src="css/media/spanish-flag.png" alt="">spanish</button>
-                    <button class="dropdown-item" type="button"><img src="css/media/french-flag.png" alt="">french</button>
-                    <button class="dropdown-item" type="button"><img src="css/media/german-flag.png" alt="">german</button>
-                    </div>
-                    
-                    <!--button 3-->
+                        <a class="dropdown-item" href="#"><img src="css/media/england-flag.png" alt="">english</a>
+                        <a class="dropdown-item" href="#"><img src="css/media/italian-flag.png" alt="">italian</a>
+                        <a class="dropdown-item" href="#"><img src="css/media/spanish-flag.png" alt="">spanish</a>
+                        <a class="dropdown-item" href="#"><img src="css/media/french-flag.png" alt="">french</a>
+                        <a class="dropdown-item" href="#"><img src="css/media/german-flag.png" alt="">german</a>
+                        <button class="dropdown-item active" type="button"></button>
+                </div>
+                <!--button 3-->
+                <div class="dropdown btn-group"> 
                     <button class="btn btn-secondary cart-items-button" type="button" id="cartItemsDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" data-icon="&#xe93a;" class="icon-cart"></span>&nbsp0 items(s) = $0.00</button>
                     <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="languageDropdownMenu">
                         <button class="dropdown-item active" type="button"></button>
@@ -145,7 +144,7 @@ The Venedor page has:
                 </div><!--end button group-->
             </div><!--end button group column-->
         </div><!--end main header row-->
-
+        </div>
                         <!--bottom header:
                             on left: navbar with links for Fashion, electronics, Gifts, Books, At Home, and Music
                             on right: search box with placeholder text "Search here" and search icon on right of box-->
@@ -153,20 +152,27 @@ The Venedor page has:
 
             <!--bottom header row-->
         <div class="row bottom-header justify-content-md-start">
-            <div class="col-md-8 col-lg-8  d-none d-sm-block">
-                <nav class="navbar nav bottom-header-nav justify-content-lg-around">
-                    <a href="#fashion" class="nav-link bottom-header-nav-link">fashion</a>
-                    <a href="#electronics" class="nav-link bottom-header-nav-link">electronics</a>
-                    <a href="#gifts" class="nav-link bottom-header-nav-link">gifts</a>
-                    <a href="#books" class="nav-link bottom-header-nav-link">books</a>
-                    <a href="#at_home" class="nav-link bottom-header-nav-link">at home</a>
-                    <a href="#music" class="nav-link bottom-header-nav-link">Music</a>
-                </nav>
-            </div>
+            <div class="col-md-9 "><!--d-none d-sm-block-->
 
-            <div class="col-md-4 col-lg-3 d-flex align-items-center  justify-content-center justify-content-md-end justify-content-lg-center search-bar">
-                <input type="text" placeholder="Search here..." id="search"><span aria-hidden="true" data-icon="&#xe986;" class="icon-search"></span>
+
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                      <a href="#fashion" class="nav-link bottom-header-nav-link">fashion</a>
+                      <a href="#electronics" class="nav-link bottom-header-nav-link">electronics</a>
+                      <a href="#gifts" class="nav-link bottom-header-nav-link">gifts</a>
+                      <a href="#books" class="nav-link bottom-header-nav-link">books</a>
+                      <a href="#at_home" class="nav-link bottom-header-nav-link">at home</a>
+                      <a href="#music" class="nav-link bottom-header-nav-link">Music</a>
+                    </div>
+                </nav>               
             </div>
+                <div class="col-md-3 d-flex align-items-center  justify-content-center justify-content-md-end  search-bar">
+                    <input type="text" placeholder="Search here..." id="search"><span aria-hidden="true" data-icon="&#xe986;" class="icon-search"></span>
+                </div>
+        </div>
         </div><!--end of bottom header row-->
     </header>
     <main>
@@ -706,7 +712,4 @@ The Venedor page has:
 </body>
 </html>
 
-<!--problems to resolve
-    dropdown menu functionality
-    add collapse menu to bottom-header-nav
--->
+<!--Lorraine Partridge Mississippi Coding Academies 2021-->
